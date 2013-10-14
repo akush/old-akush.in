@@ -9,6 +9,7 @@
         <title>Abhinav Kumar Kushwaha - Homepage</title>
         
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                
         <!--[if IE]>
         
@@ -163,9 +164,11 @@
 </div>
 -->
 <script type="text/javascript">
-$('.newwin').click(function(){
-    window.open(this.href,'newwin');
-    return false;
+$(document).ready(function(){
+    $('.newwin').click(function(){
+        window.open(this.href,'newwin');
+        return false;
+    });
 });
 /*
 $(document).ready(function(event){
