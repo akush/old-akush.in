@@ -39,7 +39,7 @@
 						<li><a href="profile.php" onclick="window.location.href='./profile.php'" >Profile</a></li>
                         <li><a href="projects.php" onclick="window.location.href='./projects.php'" >Projects</a></li>
 						<li><a href="images.php" onclick="window.location.href='./images.php'" >Images</a></li>
-                        <li><a href="http://abhinavkush.wordpress.com/" onclick="window.open(this.href,'newwin'); return false;" >Blog</a></li>
+                        <li><a href="http://abhinavkush.wordpress.com/" class='newwin'>Blog</a></li>
                     </ul>
                 </div>
             
@@ -120,10 +120,10 @@
 		
 		<h3 style="margin-bottom:1px">Find me here...</h3>
 		<div class="line" style="margin-top:0px;padding-top:0px"></div>
-	<a href='http://www.twitter.com/AbhinavKush' onclick="window.open(this.href,'newwin'); return false;" ><img src='img/twitter-logo.png' alt='Twitter'/></a>
-	<a href='http://in.linkedin.com/in/abhinav7' onclick="window.open(this.href,'newwin'); return false;" ><img src='img/linkedin-logo.png' alt='Linked In'/></a>
-	<a href='http://www.facebook.com/abhinav7' onclick="window.open(this.href,'newwin'); return false;" ><img src='img/fb-icon.png' alt='Facebook'/></a>
-	<a href='http://picasaweb.google.co.in/akush2007' onclick="window.open(this.href,'newwin'); return false;" ><img src='img/picasa_logo.png' alt='picasa'/></a>
+	<a href='http://www.twitter.com/AbhinavKush' class='newwin'><img src='img/twitter-logo.png' alt='Twitter'/></a>
+	<a href='http://in.linkedin.com/in/abhinav7' class='newwin'><img src='img/linkedin-logo.png' alt='Linked In'/></a>
+	<a href='http://www.facebook.com/abhinav7' class='newwin'><img src='img/fb-icon.png' alt='Facebook'/></a>
+	<a href='http://picasaweb.google.co.in/akush2007' class='newwin'><img src='img/picasa_logo.png' alt='picasa'/></a>
 		<br />
 		
 
@@ -142,10 +142,10 @@
        
 	<div class="by">
 		<h4 style='text-align:left;'>Follow:</h4>	
-		<a href="http://twitter.com/AbhinavKush" onclick="window.open(this.href,'newwin'); return false;" >Twitter</a>
-		<a href="http://www.facebook.com/abhinav7" onclick="window.open(this.href,'newwin'); return false;" >facebook</a>
-		<a href="http://in.linkedin.com/in/abhinav7" onclick="window.open(this.href,'newwin'); return false;" >Linked in</a>
-		<a href="http://www.google.com/profiles/akush2007" onclick="window.open(this.href,'newwin'); return false;" >Google</a>
+		<a href="http://twitter.com/AbhinavKush" class='newwin'>Twitter</a>
+		<a href="http://www.facebook.com/abhinav7" class='newwin'>facebook</a>
+		<a href="http://in.linkedin.com/in/abhinav7" class='newwin'>Linked in</a>
+		<a href="http://www.google.com/profiles/akush2007" class='newwin'>Google</a>
          </div>
            <a href="#" class="up">Go UP</a>    
            <p>Copyright 2010 - <a href='http://akush.in/'>Abhinav Kumar Kushwaha</a><br />
@@ -163,6 +163,10 @@
 </div>
 -->
 <script type="text/javascript">
+$('.newwin').click(function(){
+    window.open(this.href,'newwin');
+    return false;
+});
 /*
 $(document).ready(function(event){
     if($.cookie('facebook_likebox') == null){
@@ -187,14 +191,15 @@ function closefaceboxlike(){
         <script type="text/javascript" src="scripts/script.js"></script>
 
 <script type="text/javascript"> 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script> 
 <script type="text/javascript"> 
-try {
-var pageTracker = _gat._getTracker("UA-15983124-1");
-pageTracker._trackPageview();
-} catch(err) {}</script> 
+    try {
+        var pageTracker = _gat._getTracker("UA-15983124-1");
+        pageTracker._trackPageview();
+    } catch(err) {}
+</script> 
 
     </body>
 </html>
